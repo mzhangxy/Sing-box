@@ -19,7 +19,7 @@ const config = {
   ARGO_DOMAIN: process.env.ARGO_DOMAIN || '',         // argo固定隧道域名,留空即启用临时隧道
   ARGO_AUTH: process.env.ARGO_AUTH || '',             // argo固定隧道token或json,留空即启用临时隧道,json获取:https://json.zone.id
   ARGO_PORT: process.env.ARGO_PORT || '8001',         // argo隧道端口 使用固定隧道token,cloudflare后台设置的端口需和这里对应
-  CFIP: process.env.CFIP || 'saas.sin.fan',           // 优选域名或优选ip
+  CFIP: process.env.CFIP || 'www.ntu.edu.sg',           // 优选域名或优选ip
   CFPORT: process.env.CFPORT || '443',                // 优选域名或优选ip对应端口
   NAME: process.env.NAME || '',                       // 节点备注
   S5_PORT: process.env.S5_PORT || '',                 // socks5端口,支持多端口玩具可填写，否则不动
