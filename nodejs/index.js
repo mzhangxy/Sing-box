@@ -22,7 +22,7 @@ const config = {
   CFIP: process.env.CFIP || 'saas.sin.fan',           // 优选域名或优选ip
   CFPORT: process.env.CFPORT || '443',                // 优选域名或优选ip对应端口
   NAME: process.env.NAME || '',                       // 节点备注
-  S5_PORT: process.env.S5_PORT || '3056',                 // socks5端口,支持多端口玩具可填写，否则不动
+  S5_PORT: process.env.S5_PORT || '',                 // socks5端口,支持多端口玩具可填写，否则不动
   HY2_PORT: process.env.HY2_PORT || '',               // Hy2 端口，支持多端口玩具可填写，否则不动
   TUIC_PORT: process.env.TUIC_PORT || '',             // Tuic 端口，支持多端口玩具可填写，否则不动 
   ANYTLS_PORT: process.env.ANYTLS_PORT || '',         // AnyTLS 端口,支持多端口玩具可填写，否则不动
