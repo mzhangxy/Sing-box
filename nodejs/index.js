@@ -16,12 +16,12 @@ const config = {
   NEZHA_SERVER: process.env.NEZHA_SERVER || '',       // 哪吒面板地址，v1格式: nezha.xxx.com:8008  v0格式： nezha.xxx.com
   NEZHA_PORT: process.env.NEZHA_PORT || '',           // 哪吒v1请留空，哪吒v0 agent端口
   NEZHA_KEY: process.env.NEZHA_KEY || '',             // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0-agent密钥
-  ARGO_DOMAIN: process.env.ARGO_DOMAIN || '',         // argo固定隧道域名,留空即启用临时隧道
-  ARGO_AUTH: process.env.ARGO_AUTH || '',             // argo固定隧道token或json,留空即启用临时隧道,json获取:https://json.zone.id
-  ARGO_PORT: process.env.ARGO_PORT || '8001',         // argo隧道端口 使用固定隧道token,cloudflare后台设置的端口需和这里对应
+  ARGO_DOMAIN: process.env.ARGO_DOMAIN || 'puratya.1791765.xyz',         // argo固定隧道域名,留空即启用临时隧道
+  ARGO_AUTH: process.env.ARGO_AUTH || 'eyJhIjoiZDY1NWNiOTk2NzNlZTYzMDE4NDFkMmQyNmYxNTY5N2EiLCJ0IjoiNDUxZjU1NjAtYzQwMi00MzExLWEyZDktOWE4MmI5MjU2YjI5IiwicyI6Ik5EaGlZekF3WmpBdE5qbGlaaTAwTjJaaExXSTROalV0WkRVNVlqaG1aRGN6WkRJNSJ9',             // argo固定隧道token或json,留空即启用临时隧道,json获取:https://json.zone.id
+  ARGO_PORT: process.env.ARGO_PORT || '59001',         // argo隧道端口 使用固定隧道token,cloudflare后台设置的端口需和这里对应
   CFIP: process.env.CFIP || 'www.ntu.edu.sg',           // 优选域名或优选ip
   CFPORT: process.env.CFPORT || '443',                // 优选域名或优选ip对应端口
-  NAME: process.env.NAME || '',                       // 节点备注
+  NAME: process.env.NAME || 'Purayta',                       // 节点备注
   S5_PORT: process.env.S5_PORT || '',                 // socks5端口,支持多端口玩具可填写，否则不动
   HY2_PORT: process.env.HY2_PORT || '',               // Hy2 端口，支持多端口玩具可填写，否则不动
   TUIC_PORT: process.env.TUIC_PORT || '',             // Tuic 端口，支持多端口玩具可填写，否则不动 
@@ -29,10 +29,10 @@ const config = {
   REALITY_PORT: process.env.REALITY_PORT || '',       // Reality 端口,支持多端口玩具可填写，否则不动  
   ANYREALITY_PORT: process.env.ANYREALITY_PORT || '', // Any Reality 端口,支持多端口玩具可填写，否则不动
   CHAT_ID: process.env.CHAT_ID || '',                 // TG chat_id，可在https://t.me/laowang_serv00_bot 获取
-  BOT_TOKEN: process.env.BOT_TOKEN || '',             // TG bot_token, 使用自己的bot需要填写,使用上方的bot不用填写,不会给别人发送
-  UPLOAD_URL: process.env.UPLOAD_URL || '',           // 节点上传地址，需部署merge-sub订阅器项目，例如：https://merge.xxx.com
+  BOT_TOKEN: process.env.BOT_TOKEN || '8093926960',             // TG bot_token, 使用自己的bot需要填写,使用上方的bot不用填写,不会给别人发送
+  UPLOAD_URL: process.env.UPLOAD_URL || '8396677288:AAGCpsBEDOjKkQuuNZgk7U3xanOsKS2M6U8',           // 节点上传地址，需部署merge-sub订阅器项目，例如：https://merge.xxx.com
   FILE_PATH: process.env.FILE_PATH || '.npm',         // sub.txt节点存放目录
-  DISABLE_ARGO: process.env.DISABLE_ARGO || 'true',  // 是否禁用argo, true为禁用,false为不禁用,默认开启
+  DISABLE_ARGO: process.env.DISABLE_ARGO || 'false',  // 是否禁用argo, true为禁用,false为不禁用,默认开启
 };
 
 function log(message, type = 'INFO') {
@@ -192,7 +192,7 @@ async function main() {
           console.clear();
           log('✅ App is running');
         }
-      }, 90000);
+      }, 270000);
     });
     
     log(`🌐 HTTP: http://localhost:${PORT}`);
